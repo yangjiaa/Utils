@@ -1,8 +1,8 @@
 package com.kimzing.utils.zip;
 
 import com.kimzing.utils.file.FileUtil;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.util.Objects;
@@ -19,7 +19,7 @@ import java.util.zip.ZipOutputStream;
  */
 public class ZipUtil {
 
-    static Logger logger = LoggerFactory.getLogger(ZipUtil.class);
+    //static Logger logger = LoggerFactory.getLogger(ZipUtil.class);
 
     /**
      * 文档压缩
@@ -56,7 +56,7 @@ public class ZipUtil {
                 if (!temp.getParentFile().exists()) {
                     boolean success = temp.getParentFile().mkdirs();
                     if (!success) {
-                        logger.error("文件创建失败");
+                        //logger.error("文件创建失败");
                     }
                 }
                 try (OutputStream os = new FileOutputStream(temp);

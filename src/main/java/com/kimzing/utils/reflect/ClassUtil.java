@@ -1,8 +1,8 @@
 package com.kimzing.utils.reflect;
 
 import com.kimzing.utils.file.FileUtil;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,7 +22,7 @@ import java.util.jar.JarFile;
  */
 public class ClassUtil {
 
-    static Logger logger = LoggerFactory.getLogger(ClassUtil.class);
+    //static Logger logger = LoggerFactory.getLogger(ClassUtil.class);
 
     /**
      * 获取类加载器
@@ -327,7 +327,7 @@ public class ClassUtil {
         try {
             theClass = Class.forName(className);
         } catch (ClassNotFoundException e1) {
-            logger.error("load class error:" + e1.getMessage());
+            //logger.error("load class error:" + e1.getMessage());
             e1.printStackTrace();
         }
         return theClass;

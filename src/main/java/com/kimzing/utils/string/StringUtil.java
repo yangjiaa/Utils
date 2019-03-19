@@ -24,7 +24,8 @@ public class StringUtil {
      * @return
      */
     public static boolean isBlank(final CharSequence cs) {
-        return org.apache.commons.lang3.StringUtils.isBlank(cs);
+       //return org.apache.commons.lang3.StringUtils.isBlank(cs);
+        return false;
     }
 
     /**
@@ -38,7 +39,8 @@ public class StringUtil {
      * @return
      */
     public static boolean isEmpty(final CharSequence cs) {
-        return org.apache.commons.lang3.StringUtils.isEmpty(cs);
+        //return org.apache.commons.lang3.StringUtils.isEmpty(cs);
+        return false;
     }
 
     /**
@@ -52,7 +54,8 @@ public class StringUtil {
      * @return
      */
     public static String trim(String s) {
-        return org.apache.commons.lang3.StringUtils.trim(s);
+        //return org.apache.commons.lang3.StringUtils.trim(s);
+        return null;
     }
 
     /**
